@@ -1,0 +1,26 @@
+'''teksti = input("Kirjoita jotain: ")
+print("Kirjoitit:", teksti)'''
+
+# Tee koodi, joka kysyy kome nimeä ja laittaa ne listaan
+# ...
+nimet = []
+
+# Ctrl+Shift+P  VSCoden kommentopaletti
+# Ctrl+ ' (Windows) Rivien kommentointi
+# Ctrl + C Ohjelman pysäyttäminen
+'''for i in [1, 2, 3]:
+    nimi = input('anna nimi ' + str(i))
+    nimet.append(nimi)'''
+
+
+'''while True: 
+    lisää_nimi = input("Kirjoita nimen: ")
+    nimet.append(lisää_nimi)
+    if len(nimet) >= 3:
+        break'''
+
+while len(nimet) < 3:
+    lisää_nimi = input('Kirjoita nimen: ')
+    nimet.append(lisää_nimi)
+#viimeisenä tulosta nimet
+print(nimet)
