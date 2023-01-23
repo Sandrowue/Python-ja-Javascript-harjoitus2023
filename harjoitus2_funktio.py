@@ -6,8 +6,9 @@
 def kysy_nimi():
     nimi = input('Anna nimi: ')
     return nimi
-joku = kysy_nimi()
-print(joku)
+
+# joku = kysy_nimi()
+# print(joku)
 
 def kysy_nimet(lkm):
     nimet = []
@@ -20,7 +21,6 @@ def kysy_nimet(lkm):
 if __name__ == "__main__":
     nimilista = kysy_nimet(3)
     print(nimilista)
-
 
 
 '''def kysy_nimet_rekuriolla(lkm, nimet=None):
