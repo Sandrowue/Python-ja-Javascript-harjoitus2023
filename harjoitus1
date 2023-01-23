@@ -19,8 +19,14 @@ nimet = []
     if len(nimet) >= 3:
         break'''
 
-while len(nimet) < 3:
+'''while len(nimet) < 3:
     lisää_nimi = input('Kirjoita nimen: ')
     nimet.append(lisää_nimi)
 #viimeisenä tulosta nimet
-print(nimet)
+print(nimet)'''
+
+if len(nimet) <= 3:
+    lisää_nimi = input('Kirjoita nimen: ')
+    nimet.appen(lisää_nimi)
+else:
+    print nimet
