@@ -23,13 +23,13 @@ if __name__ == "__main__":
     print(nimilista)
 
 
-'''def kysy_nimet_rekuriolla(lkm, nimet=None):
-    if jeljellä == 0:
+'''def kysy_nimet_rekursiolla(jäljellä, nimet=None):
+    if jäljellä == 0:
         return nimet
     if nimet is None:
         nimet = []
-    nimi = kysy_nimi()
-    return kysy_nimet_rekursiolla(jäkjellä - 1, nimet + [nimi])
+    nimi = input("Anna nimi: ")
+    return kysy_nimet_rekursiolla(jäljellä - 1, nimet + [nimi])
     
 nimet = kysy_nimet_rekursiolla(3)
 print(nimet)'''
