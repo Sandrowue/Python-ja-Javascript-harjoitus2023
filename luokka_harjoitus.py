@@ -6,10 +6,10 @@ class Kasvi:
         self.kasvupaikka = kasvupaikka
 
     def __str__(self):
-        return self.suomalainen_nimi + ' latinaksi ' + self.latinalainen_nimi + ' on ' + self.kasvityyppi + ' ja sen kasvupaikka on ' + self.kasvupaikka
+        return f'{self.suomalainen_nimi}, latinaksi {self.latinalainen_nimi} on {self.kasvityyppi} ja sen kasvupaikka on {self.kasvupaikka}.'
 
-Voikukka = Kasvi('Voikukka', 'Taxum officinale', 'monivuotinen Kukka', 'niitty')
-Punaherukka = Kasvi('Punaherukka', 'Ribes rubrum', 'marjapensas', 'piha')
+voikukka = Kasvi('Voikukka', 'Taxum officinale', 'monivuotinen Kukka', 'niitty')
+punaherukka = Kasvi('Punaherukka', 'Ribes rubrum', 'marjapensas', 'piha')
 
-print(Voikukka)
-print(Punaherukka)        
+print(voikukka)
+print(punaherukka)        
