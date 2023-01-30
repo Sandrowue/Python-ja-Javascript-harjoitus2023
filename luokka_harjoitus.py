@@ -4,17 +4,16 @@ class Kasvi:
         self.latinalainen_nimi = latinalainen_nimi
         self.kasvityyppi = kasvityyppi
         self.kasvupaikka = kasvupaikka
-        self.istutusvuousi = None
-
-        istutusvuosi = f'sen istutusvuosi on: -{self.istutusvuousi % 100:02d}' if self.istutusvuousi else ""
+        self.istutusvuosi = None
 
     def __str__(self):
-        return f'{self.suomalainen_nimi}, latinaksi {self.latinalainen_nimi} on {self.kasvityyppi} ja sen kasvupaikka on {self.kasvupaikka}{self.istutusvuousi}.'
+        istutusvuosi = f'sen istutusvuosi on: -{self.istutusvuosi % 100:02d}' if self.istutusvuosi else ""
+        return f'{self.suomalainen_nimi}, latinaksi {self.latinalainen_nimi} on {self.kasvityyppi} ja sen kasvupaikka on {self.kasvupaikka}{istutusvuosi}.'
 
 voikukka = Kasvi('Voikukka', 'Taxum officinale', 'monivuotinen Kukka', 'niitty')
 punaherukka = Kasvi('Punaherukka', 'Ribes rubrum', 'marjapensas', 'piha')
 
-punaherukka.istutusvuousi = '2013'
+punaherukka.istutusvuosi = 2013
 
 print(voikukka)
 print(punaherukka)        
