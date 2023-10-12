@@ -1,3 +1,7 @@
+// Libraries
+
+const mathjs = require('mathjs')
+
 function createPersonObjekt(name, height, weight, birthDate) {
     personObject = {
         name: name,
@@ -38,6 +42,12 @@ class Programmer {
         this.grades.forEach(num => {sum += num;})
         return sum/this.grades.length;
     }
+    stdDeviation() {
+        let stdDev = mathjs.std(this.grades)
+        return stdDev
+        
+    }
+
     }
 
 
@@ -46,4 +56,7 @@ JuusoOllikainen = new Programmer('Juuso Ollikainen', 'Fullstack', ['C sharp', 'S
 JaanaKuokka = new Programmer('Jaana Kuokka', 'Frontend', ['HTML', 'CSS', 'Javascript', 'Python'], 'Professional', [4, 4, 5, 5, 4]) 
 ourProgrammers = [MaxSchwerin, JuusoOllikainen, JaanaKuokka]
 
-console.log(MaxSchwerin.averageGrades(), JuusoOllikainen.averageGrades(), JaanaKuokka.averageGrades())
+/*console.log('Max Schwerin, average grade:' + MaxSchwerin.averageGrades() + '; Juuso Ollikainen, average grade:' + JuusoOllikainen.averageGrades() + 
+'; Jaana Kuokka, average grade:' + JaanaKuokka.averageGrades())*/
+
+console.log(MaxSchwerin.stdDeviation())
