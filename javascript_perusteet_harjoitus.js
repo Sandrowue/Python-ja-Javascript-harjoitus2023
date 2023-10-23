@@ -43,9 +43,23 @@ class Programmer {
         return sum/this.grades.length;
     }
     stdDeviation() {
-        let stdDev = mathjs.std(this.grades)
-        return stdDev
-        
+        let stdDev = mathjs.std(this.grades, 'uncorrected')
+        return mathjs.round(stdDev, 3)    
+    }
+
+    variance() {
+        let arrayVariance = mathjs.variance(this.grades, 'uncorrected')
+        return mathjs.round(arrayVariance, 3)
+    }
+
+    /*mean() {
+        let arrayMean = mathjs.mean(this.grades)
+        return mathjs.round(arrayMean, 3)
+    }*/
+
+    mode() {
+        let arrayMode = mathjs.mode(this.grades)
+        return arrayMode
     }
 
     }
@@ -59,4 +73,21 @@ ourProgrammers = [MaxSchwerin, JuusoOllikainen, JaanaKuokka]
 /*console.log('Max Schwerin, average grade:' + MaxSchwerin.averageGrades() + '; Juuso Ollikainen, average grade:' + JuusoOllikainen.averageGrades() + 
 '; Jaana Kuokka, average grade:' + JaanaKuokka.averageGrades())*/
 
+console.log(MaxSchwerin.averageGrades())
 console.log(MaxSchwerin.stdDeviation())
+console.log(MaxSchwerin.variance())
+console.log(MaxSchwerin.mode())
+
+console.log(JuusoOllikainen.averageGrades())
+console.log(JuusoOllikainen.stdDeviation())
+console.log(JuusoOllikainen.variance())
+console.log(JuusoOllikainen.mode())
+
+console.log(JaanaKuokka.averageGrades())
+console.log(JaanaKuokka.stdDeviation())
+console.log(JaanaKuokka.variance())
+console.log(JaanaKuokka.mode())
+
+module.exports = {
+    Programmer
+}
