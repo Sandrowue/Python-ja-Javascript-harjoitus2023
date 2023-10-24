@@ -52,10 +52,10 @@ class Programmer {
         return mathjs.round(arrayVariance, 3)
     }
 
-    /*mean() {
+    mean() {
         let arrayMean = mathjs.mean(this.grades)
         return mathjs.round(arrayMean, 3)
-    }*/
+    }
 
     mode() {
         let arrayMode = mathjs.mode(this.grades)
