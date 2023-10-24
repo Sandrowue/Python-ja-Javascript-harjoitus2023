@@ -77,6 +77,7 @@ console.log(MaxSchwerin.averageGrades())
 console.log(MaxSchwerin.stdDeviation())
 console.log(MaxSchwerin.variance())
 console.log(MaxSchwerin.mode())
+console.log(MaxSchwerin.mean())
 
 console.log(JuusoOllikainen.averageGrades())
 console.log(JuusoOllikainen.stdDeviation())
